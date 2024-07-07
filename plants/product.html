@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+        }
+        .product-menu {
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        .product-item img {
+            width: 200px;
+            height: 200px;
+        }
+        .sidebar {
+            width: 200px;
+            position: sticky;
+            top: 20px;
+            height: 100vh;
+            padding-top: 20px;
+        }
+        .order-now {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ff6a00;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .text-orange {
+            color: #ff4500;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 40px;
+        }
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #ff6a00;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a img {
+            margin-right: 10px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row d-flex justify-content-between">
+        <div class="sidebar col-sm-3">
+            <h2 class="text-orange p-2">Plant Store</h2>
+            <ul>
+                <li><a href="#cacti"><img src="assets/img/product1.png" alt="Cacti Plant">Indoor Plants</a></li>
+                <li><a href="#cactus"><img src="assets/img/product2.png" alt="Cactus Plant">Outdoor Plants</a></li>
+                <li><a href="#aloe-vera"><img src="assets/img/product3.png" alt="Aloe Vera Plant"> Aquatic Plants</a></li>
+                <li><a href="#succulent"><img src="assets/img/product4.png" alt="Succulent Plant"> Medicine Plants</a></li>
+                 
+            </ul>
+        </div>
+
+        <div class="container col-sm-8  " id="cacti">
+            <div class="div4 p-2">
+                <div class="div3" id="products">
+                    <h1 class="text-orange p-2">Indoor Products</h1>
+                    <div class="product-menu">
+                        <div class="product-item">
+                            <img src="./image/snake.jpeg" alt="Snake plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Snake Plant</h3>
+                                <p class="price">$19.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/img/product2.png" alt="Cactus Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Cactus Plant</h3>
+                                <p class="price">$11.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="assets/img/product3.png" alt="Aloe Vera Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Aloe Vera Plant</h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="assets/img/product4.png" alt="Succulent Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Succulent Plant</h3>
+                                <p class="price">$5.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/img/product6.png" alt="Green Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Green Plant</h3>
+                                <p class="price">$8.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./assets/img/devil.jpeg" alt="Devil's ivy Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Devil's ivy Plant</h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./assets/img/sago.jpeg" alt="Sago Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Sago Plant</h3>
+                                <p class="price">$6.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./assets/img/spider.jpeg" alt="Spider Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Spider Plant</h3>
+                                <p class="price">$4.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-sm-8  " id="cactus">
+            <div class="div4 p-2">
+                <div class="div3" id="products">
+                    <h1 class="text-orange p-2">Outdoor Products</h1>
+                    <div class="product-menu">
+                        <div class="product-item">
+                            <img src="./image/beg.jpeg " alt="Begonia Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Begonia Plant</h3>
+                                <p class="price">$19.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/lan.jpeg " alt=" Lantana Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Lantana Plant</h3>
+                                <p class="price">$11.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="assets/img/product3.png" alt="Aloe Vera Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Aloe Vera Plant</h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./image/jas.jpeg" alt=" Jasmine Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Jasmine Plant</h3>
+                                <p class="price">$5.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/ner.jpeg " alt="Nerium Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Nerium Plant</h3>
+                                <p class="price">$8.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/canna.jpeg " alt="Canna Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Canna Plant</h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./image/ner.jpeg " alt="Mint Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Mint Plant</h3>
+                                <p class="price">$6.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./image/crotons.jpeg " alt=" Crotons Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Crotons Plant</h3>
+                                <p class="price">$4.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="container col-sm-8  " id="aloe-vera">
+            <div class="div4 p-2">
+                <div class="div3" id="products">
+                    <h1 class="text-orange p-2">Aquatic Products</h1>
+                    <div class="product-menu">
+                        <div class="product-item">
+                            <img src="./image/crotons.jpeg " alt="Java Moss">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Java Moss</h3>
+                                <p class="price">$19.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/beg.jpeg " alt=" Lotus">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Lotus</h3>
+                                <p class="price">$11.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./image/ner.jpeg " alt=" Hornwort">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Hornwort</h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./image/snake.jpeg" alt="Frogbit ">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Frogbit</h3>
+                                <p class="price">$5.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/jas.jpeg " alt=" Duckweed">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Duckweed</h3>
+                                <p class="price">$8.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/lan.jpeg" alt=" Waterlily">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Waterlily</h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-sm-8  " id="succulent">
+            <div class="div4 p-2">
+                <div class="div3" id="products">
+                    <h1 class="text-orange p-2">Medicine Products</h1>
+                    <div class="product-menu">
+                        <div class="product-item">
+                            <img src="./image/sage.jpeg " alt="Sage">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Sage</h3>
+                                <p class="price">$19.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/lavender.jpeg " alt="Lavendar">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Lavendar</h3>
+                                <p class="price">$11.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="assets/img/product3.png" alt="Aloe Vera Plant">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Aloe Vera Plant</h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item" >
+                            <img src="./image/garlic.jpeg  " alt=" Garlic">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3> Garlic</h3>
+                                <p class="price">$5.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/echin.jpeg " alt=" Echinacea">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Echinacea </h3>
+                                <p class="price">$8.99</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./image/turmer.jpeg" alt="Turmeric ">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Turmeric </h3>
+                                <p class="price">$7.99</p>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('.order-now').style.display = 'block';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.order-now').style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>
